@@ -52,7 +52,6 @@ h2 {
   border-radius: 25px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 .login-btn:hover {
