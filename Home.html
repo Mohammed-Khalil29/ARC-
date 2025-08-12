@@ -1,0 +1,154 @@
+<html>
+   <head>
+
+<title>CHDD</title>
+
+<link rel="stylesheet" href="Home.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   </head>
+    
+<body>
+ <div class="rec-bar"></div>
+    <p>.........</p>
+    <p>........</p>
+    
+    <!-- 3 rec up -->
+    <div class="login-rec"></div>
+    <div class="Home-rec"></div>
+    <div class="Support-rec"></div>
+
+       <!-- 3 bar text -->
+
+    <a href="Home.html" class="Home">Home</a>
+    <a href="HTML/login.html" class="Login">Login</a>
+    <a href="Support.html" class="Support">Support</a>
+    
+
+       <!-- logo img -->
+
+      <img class="adhd-logo" src="adhd 1.png" alt="ADHD img" width="500px" height="500px">
+       <!-- nav bar -->
+
+      <nav class="navbar">
+
+        
+  <ul class="menu">
+    <li class="dropdown">
+      <!-- understanding-adhd -->
+      <a href="#" class="understanding-adhd">UNDERSTANDING ADHD</a>
+      <ul class="dropdown-content">
+        <li><a href="#">About ADHD</a></li>
+        <li><a href="#">Our videos on ADHD</a></li>
+        <li><a href="#">Famous People with ADHD</a></li>
+        <li><a href="#">For Teens & Children</a></li>
+        <li><a href="#">Useful Resources</a></li>
+        <li><a href="#">For Professionals</a></li>
+        <li><a href="#">Adult Diagnosis Pathway</a></li>
+        <li><a href="#">History of ADHD</a></li>
+        <li><a href="#">Page for ADHD deniers</a></li>
+      </ul>
+    </li>
+
+<!-- UNDERSTANDING VISION&HEARING ISSUES -->
+    <ul class="menu1">
+    <li class="dropdown1">
+     <a href="#" class="understanding-vis-hear">UNDERSTANDING VISION&HEARING ISSUES </a>
+      <ul class="dropdown-content1">
+
+        <li><a href="#">About Blindness</a></li>
+        <li><a href="#">Our videos </a></li>
+        <li><a href="#">Useful Resources</a></li>
+      </ul>
+    </li>
+
+    <!-- DISTRACTION -->
+    <ul class="menu2">
+    <li class="dropdown2">
+      
+     <a href="#" class="DISTRACTION">DISTRACTION</a>
+      <ul class="dropdown-content2">
+
+        <li><a href="#">About Distraction</a></li>
+        <li><a href="#">Our videos </a></li>
+        <li><a href="#">How to avoid</a></li>
+        <li><a href="#">Symptopms</a></li>
+
+      </ul>
+    </li>
+
+    <!-- education -->
+
+    <ul class="menu3">
+    <li class="dropdown3">
+      <a href="#" class="EDUCATION">EDUCATION</a>
+      <ul class="dropdown-content3">
+
+        <li><a href="#">Assignments</a></li>
+        <li><a href="#">Quizez</a></li>
+        <li><a href="#">Attendence</a>
+         <li><a href="#">Progress monitoring</a></li>
+
+      </ul>
+    </li>
+
+    <!-- about us -->
+
+    <ul class="menu4">
+    <li class="dropdown4">
+      <a href="#" class="aboutus">ABOUT US</a>
+
+      <ul class="dropdown-content4">
+
+        <li><a href="#">Certificates</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Team info</a>
+         <li><a href="#">Contact us</a></li>
+
+      </ul>
+    </li>
+<!-- the close of the upper ul and -->
+  </ul>
+</nav>
+
+<!-- img edititng -->
+ 
+<div class="wrapper">
+  <div class="box">
+    <img src="hearing6.png" alt="Hearing issue img1" class="img1 active">
+    <img src="blindness1.png" alt="Blindness img" class="img2">
+    <img src="sec img.png" alt="ADHD img" class="img3">
+    <img src="firsy img.png" alt="ADHD img" class="img4">
+
+  </div>
+</div>
+
+
+<!-- JS code -->
+<script>
+  let images = document.querySelectorAll('.box img');
+  let index = 0;
+
+  function changeImage() {
+    images.forEach(img => img.classList.remove('active'));
+    images[index].classList.add('active');
+    index = (index + 1) % images.length;
+  }
+
+  setInterval(changeImage, 3000); // تغيير الصورة كل 3 ثواني
+</script>
+
+
+
+    
+    
+
+
+
+    
+   
+    
+
+    
+  </body>
+</html>
