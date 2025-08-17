@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up</title>
+        <link rel="stylesheet" href="../CSS/signup3.css">
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>        
+                    <div class="container">
+                        <form action="../Home/Home.html">
+                        <div class="input">
+                            <label for="guard">Guardian</label>
+                        <i class="fas fa-user-tie"></i>
+                        <input type="text" id="guard" required placeholder="Gurdian name">
+                        </div>
+                        <div class="input">
+                            <label for="num">Number</label>
+                            <i class="fas fa-address-book"></i>
+                            <input type="tel" id="phone" pattern="^\+20\d{10}$" maxlength="13" name="phone" required
+                            title="Phone number must start with +20 and contain exactly 10 digits after it."
+                            placeholder="Input guardian phone number">
+                        </div>
+                        <div class="input">
+                            <label for="gemail">Guardian email</label>
+                            <i class="fas fa-envelope"></i>
+                                <input type="email" title=" email must be as example@gamil.com" required placeholder="Input guardian email">
+                        </div>
+                        <label for="id" class="idlabel">Guardian id card <b>:</b></label>
+                        <div class="iddiv">
+                            <input type="file" title="Upload guardian's ID card" class="id" required id="id">
+                            <i id="id" class="fa-solid fa-upload"></i>
+                            <label title="Upload guardian's ID card" class="idl" for="id">Upload personal card</label>
+                        </div>
+            <div class="next">
+                <a href="login.html" class="backa">Back</a>
+            </div>
+
+
+            </form>
+                    </div>
+    </body>
+</html>
