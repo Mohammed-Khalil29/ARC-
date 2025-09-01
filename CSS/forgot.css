@@ -132,3 +132,49 @@ h2 {
   border: 2px solid;
   rgba(255, 255, 255, 0.5)
 }
+
+.btn {
+  width: 80%;
+  padding: 12px;
+  align-items: flex-end;
+  justify-content: end;
+    background: radial-gradient(ellipse at center, #0074d9 0%, #001f3f 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+
+
+
+
+
+
+.btn {
+    flex: 1;
+    width: auto;
+
+    background: radial-gradient(ellipse at center, #0074d9 0%, #001f3f 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+} 
+.ver {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* فاصل صغير بين الحقل والزر */
+    margin-top: 10px;
+}

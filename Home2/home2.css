@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins' , sans-serif;
+}
+
+.logo {
+    height: 80px;
+}
+
+body {
+    background-color: rgb(200, 230, 255);
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+    margin: 0 5px;
+    background-color: transparent;
+    position: relative; 
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 15px rgba(30, 136, 229, 0.8);
+    border-radius: 5px;
+    background-color: rgb(66, 165, 245);
+    color: white;
+}
+
+
+nav ul ul {
+    position: absolute;
+    top: 70px; 
+    left: 0;
+    display: block;
+    min-width: 200px;
+
+
+    background: rgba(255, 255, 255, 0.85); 
+    border: 1px solid rgba(2, 165, 230, 0.4); 
+    border-radius: 10px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(6px); 
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+}
+
+
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+nav ul ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(2, 165, 230, 0.2); /* خط فاصل خفيف */
+}
+
+
+nav ul ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul ul li a {
+    line-height: 40px;
+    padding: 10px 15px;
+    background: transparent;
+    color: #000;
+    display: block;
+    transition: 0.3s ease;
+    border-radius: 8px;
+}
+
+
+nav ul ul li a:hover {
+    background: rgba(66, 165, 245, 0.8); 
+    color: white;
+}
+
+
+nav ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+header .logo {
+    float: left;
+    color: white;
+    font-size: 27px;
+    padding: 20px 0 0 15px;
+    margin-top: 3px;
+}
+h1 {
+    font-size: 70px;
+    display: inline-block;
+    background-color: rgb(66, 165, 245);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px ;
+    font-family: 'Nunito', 'Futura', 'Avenir', sans-serif;
+}
+.title {
+    height: 20px;
+    width: 343px;
+    margin: 60px 0 0 60px;
+}
+.study {
+    display: inline-block;
+    height: 481px;
+    position: relative;
+    bottom: 86px;
+    right: 200px;
+    width: 370px;
+    margin: 0 0 0 0;
+    float: right;
+}

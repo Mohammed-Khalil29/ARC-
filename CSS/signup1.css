@@ -6,17 +6,21 @@
 }
 
 body {
-    height: 100hv;
-    background: radial-gradient(ellipse at center, #0074d9 0%, #001f3f 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  background-color: rgb(178, 178, 215);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container {
-    background-color: whitesmoke;
-    border-radius: 12px;
-    width: 350px;
-    padding: 40px 30px;
+.container {  
+  background: rgba(206, 206, 247, 0.4);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 350px;
+  padding: 40px 30px;
+  border-radius: 12px;
 }
 h2 {
     text-align: center;
@@ -42,117 +46,39 @@ h2 {
     box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
 }
 
-.button button {
-      width: 100%;
-  padding: 12px;
-    background: radial-gradient(ellipse at center, #0074d9 0%, #001f3f 100%);
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-.button:active {
-  transform: scale(0.9);
-}
-.sel {
-        width: 100%;
-        cursor: pointer;
-  padding: 12px 12px 12px 35px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-    box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
-}
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-.social-icons:active {
-  transform: scale(0.9);
-}
-.social-icons a {
-  color: white;
-  background-color: #3b5998;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-.social-icons a:nth-child(2) {
-  background-color: #1da1f2;
-}
-
-.social-icons a:nth-child(3) {
-  background-color: #db4437;
-}
-.or {
-    padding: 2px;
-    margin-top: 20px;
-    text-align: center;
-    padding-bottom: 10px;
-    color: #666;
-}
-.already {
-    text-align: center;
-    color: #666;
-}
-.login {
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 5px;
-    color: #333;
-    text-decoration: none;
-}
-.login {
-  display: block;
-  text-align: center;
-  font-weight
-}
-.loigin:active {
-  transform: scale(0.9);
-}
 .input i {
     position: absolute;
   top: 30px;
   left: 10px;
   color: #aaa;
 }
-input[type="file"] {
-  display: none;
+.next {
+  display: flex;
+  justify-content: space-between; /* يضع أول عنصر على اليسار، والتاني على اليمين */
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+  margin: 30px 0;
 }
-.iddiv {
-  background-color: #1da1f2;
-  text-align: center;
-  padding: 15px 40px;
-  border-radius: 3px;
-  margin-bottom: 20px;
-  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+.btnn, .backa {
+  text-decoration: none;
+  color: #3a157f;
   cursor: pointer;
+  font-size: 1.2em;
 }
-.iddiv i {
-  color: rgba(255, 255, 255, 0.9); /* أبيض شفاف قليلًا */
-  position: relative;
-  right: 10px;
+.nexta:hover, .backa:hover {
+  text-decoration: underline;
+  color: #0074d9;
 }
-.iddiv:active{
-  transform: scale(0.9);
-}
-.iddiv input,.iddiv label {
-  cursor: pointer;
-}
-.iddiv input {
- width: 100%; 
- height: 100%;
-}
-.input input:hover {
+input:hover {
   border: 2px solid;
   rgba(255, 255, 255, 0.5)
+}
+.nexta:active , .backa:active {
+  transform: scale(0.9);
+}
+.btnn {
+  text-decoration: none;
+  background-color: transparent;
+  border: unset;
 }

@@ -645,25 +645,9 @@ ul, li {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Navigation side */
+.nav-side a {
+  text-decoration: none;
+  color: black;
+}
 
