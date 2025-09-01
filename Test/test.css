@@ -1,0 +1,24 @@
+    ul {
+      list-style-type: none; /* نشيل النقاط */
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      position: relative;
+      padding: 10px;
+      background: #eee;
+      margin-bottom: 2px;
+      cursor: pointer;
+    }
+
+    /* ul المتفرعة */
+    li ul {
+      display: none; /* نخليها متخفية */
+      margin-left: 20px; /* مسافة جانبية */
+    }
+
+    /* لما نعمل hover على العنصر الأساسي تظهر الـ ul اللي جواه */
+    li:hover > ul {
+      display: block;
+    }
